@@ -1,0 +1,117 @@
+@import url('./reset.css');
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format('woff');
+}
+
+body{
+    background-color: #fcfcfc;
+    background-image: url('/assets/images/slowbg_12.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #22019a; 
+    font-family: "IBM Plex Mono", monospace;
+}
+
+p {
+    font-size: 18pt;
+}
+
+#navmenu {
+    background-color: #fcfcfcdd;
+    border-left: solid 1px #22019a;
+    padding-left: 3%; 
+    width: 30%; 
+    height: 100vh; 
+    position: fixed; 
+    z-index: 100;
+    top: 0; 
+    right: 0; 
+    font-size: 10pt;
+}
+
+#footer_about {
+    border: solid 1px #22019a;
+    padding-left: 3%; 
+    width: 90%; 
+    position: absolute;
+    bottom: 10%;
+    right: 5%; 
+    font-size: 12pt;
+}
+
+#rss {
+    border: solid 1px #22019a;
+    padding-left: 3%; 
+    width: 90%; 
+    position: absolute;
+    bottom: 3%;
+    right: 5%; 
+    font-size: 12pt;
+
+}
+
+#about, #research, #content{
+    padding: 1%;
+    width: 65%; 
+    margin-right: 25%; 
+}
+
+.report-grid {
+    margin-top: 1%; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(min(40vw, 22rem), 1fr));
+    gap: 5%;
+}
+
+.report-card {
+    background-color: #fcfcfcdd;
+    padding: 3%; 
+    margin: 1%; 
+    width: 100%; 
+    border: solid 1px #22019a;
+}
+
+.author, .description {
+    font-size: 12pt;
+}
+
+.cicada-card {
+    background-color: #C7FAE7;
+    color: #1e83fe; 
+    padding: 3%; 
+    margin: 1%; 
+    width: 75%; 
+    border: solid 5px #C7FAE7;
+}
+
+.cicada {
+    color: #66B647; 
+}
+
+.status {
+    color: #f496ee; 
+}
+
+#cicada-row {
+    display: flex; 
+    flex-direction: row;
+    justify-content:flex-start; 
+
+}
+
+#cicada-row img {
+    width: 35%;
+    margin: 1%;  
+}
+
+#mailinglist {
+    width: 65%; 
+}
+
+iframe {
+    width: 100%; 
+    height: 100vh; 
+}

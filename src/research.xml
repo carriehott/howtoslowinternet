@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slow Internet Research</title>
+    <description>Research reports and findings from the Slow Internet project</description>
+    <link>https://slowinternet.github.io/research.html</link>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://slowinternet.github.io/research.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Networks of New York</title>
+      <description>By Ingrid Burrington, network member. Exploring the physical infrastructure of networks in New York.</description>
+      <link>https://lifewinning.com/projects/networks-of-new-york/</link>
+      <guid isPermaLink="false">networks-of-new-york-2025</guid>
+      <pubDate>Wed, 15 Jan 2025 10:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>Getting Into Fights With Data Centers</title>
+      <description>By Anne Pasek, network member. Examining conflicts and power dynamics around data center infrastructure.</description>
+      <link>https://emmlab.info/Resources_page/Data%20Center%20Fights_digital.pdf</link>
+      <guid isPermaLink="false">data-center-fights-2025</guid>
+      <pubDate>Tue, 14 Jan 2025 14:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>Data Center Decenter</title>
+      <description>An ongoing project exploring alternative approaches to centralized data infrastructure.</description>
+      <link>https://slowinternet.github.io/research.html</link>
+      <guid isPermaLink="false">data-center-decenter-2025</guid>
+      <pubDate>Mon, 13 Jan 2025 09:15:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>Tracing The Line: Promissory Politics</title>
+      <description>By FICTILIS, network member. Investigating the promises and politics of climate change infrastructure.</description>
+      <link>https://www.e-flux.com/architecture/workplace/430307/tracing-the-line-or-the-promissory-politics-of-climate-change</link>
+      <guid isPermaLink="false">tracing-the-line-2025</guid>
+      <pubDate>Sun, 12 Jan 2025 16:45:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>Failing Regularly: on technology's promises</title>
+      <description>An in-progress research project examining the failures and broken promises of technology infrastructure. Subscribe for updates.</description>
+      <link>https://slowinternet.github.io/research.html</link>
+      <guid isPermaLink="false">failing-regularly-2025</guid>
+      <pubDate>Sat, 11 Jan 2025 11:20:00 GMT</pubDate>
+    </item>
+    
+  </channel>
+</rss>
