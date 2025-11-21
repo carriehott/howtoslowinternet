@@ -1,5 +1,12 @@
 @import url('./reset.css');
 
+html {
+  box-sizing: border-box;
+    font-size: 1rem;
+   transition: font-size 0.2s ease;
+            }
+
+
 @font-face {
     font-family: 'IBM Plex Mono';
     src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format('woff');
@@ -16,9 +23,12 @@ body{
 }
 
 p {
-    font-size: 18pt;
+    font-size: 1rem; 
 }
 
+h1 {
+    font-size: 1rem;
+}
 #navmenu {
     background-color: #fcfcfcdd;
     border-left: solid 1px #22019a;
@@ -39,7 +49,7 @@ p {
     position: absolute;
     bottom: 10%;
     right: 5%; 
-    font-size: 12pt;
+    font-size: .75rem;
 }
 
 #rss {
@@ -49,7 +59,7 @@ p {
     position: absolute;
     bottom: 3%;
     right: 5%; 
-    font-size: 12pt;
+    font-size: .75rem;
 
 }
 
@@ -75,7 +85,7 @@ p {
 }
 
 .author, .description {
-    font-size: 12pt;
+   font-size: .75rem;
 }
 
 .cicada-card {
