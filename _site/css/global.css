@@ -16,7 +16,7 @@ body{
     background-color: #fcfcfc;
     background-image: url('/assets/images/slowbg_12.png');
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     color: #22019a; 
     font-family: "IBM Plex Mono", monospace;
@@ -40,11 +40,15 @@ h1 {
     top: 0; 
     right: 0; 
     font-size: 10pt;
+    overflow-y: auto;
 }
 
 #footer_about {
     border: solid 1px #22019a;
     padding-left: 3%; 
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 90%; 
     position: absolute;
     bottom: 10%;
@@ -55,6 +59,9 @@ h1 {
 #rss {
     border: solid 1px #22019a;
     padding-left: 3%; 
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 90%; 
     position: absolute;
     bottom: 3%;
@@ -74,6 +81,7 @@ h1 {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(min(40vw, 22rem), 1fr));
     gap: 5%;
+    grid-auto-rows: auto;
 }
 
 .report-card {
@@ -109,12 +117,14 @@ h1 {
     display: flex; 
     flex-direction: row;
     justify-content:flex-start; 
-
+    flex-wrap: wrap;
 }
 
 #cicada-row img {
     width: 35%;
     margin: 1%;  
+    max-width: 100%;
+    height: auto;
 }
 
 #mailinglist {
@@ -126,6 +136,138 @@ iframe {
     height: 100vh; 
 }
 
-@media screen  {
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust font sizes for mobile */
+    html {
+        font-size: 0.9rem;
+    }
     
+    p {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.25rem;
+    }
+    
+    /* Make navigation menu mobile-friendly */
+    #navmenu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-left: none;
+        border-bottom: solid 1px #22019a;
+        padding: 3% 5%;
+        max-height: none;
+        overflow-y: visible;
+    }
+    
+    #navmenu h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Adjust content width for mobile */
+    #about, #research, #content {
+        width: 95%;
+        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3% 5%;
+    }
+    
+    /* Fix footer positioning on mobile */
+    #footer_about, #rss {
+        position: relative;
+        width: 95%;
+        margin: 3% auto;
+        right: auto;
+        bottom: auto;
+        padding: 3% 5%;
+    }
+    
+    /* Make report grid single column on mobile */
+    .report-grid {
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+    
+    .report-card {
+        width: 100%;
+        margin: 2% 0;
+        padding: 5%;
+    }
+    
+    /* Adjust cicada card width */
+    .cicada-card {
+        width: 100%;
+        margin: 2% 0;
+        padding: 5%;
+    }
+    
+    /* Make cicada row stack on mobile */
+    #cicada-row {
+        flex-direction: column;
+    }
+    
+    #cicada-row img {
+        width: 100%;
+        margin: 2% 0;
+    }
+    
+    /* Adjust mailing list width */
+    #mailinglist {
+        width: 100%;
+    }
+    
+    /* Fix iframe height on mobile */
+    iframe {
+        height: 80vh;
+        min-height: 400px;
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #navmenu {
+        width: 35%;
+    }
+    
+    #about, #research, #content {
+        width: 60%;
+        margin-right: 30%;
+    }
+    
+    .report-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(45vw, 20rem), 1fr));
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 0.85rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+    
+    h1 {
+        font-size: 1.1rem;
+    }
+    
+    #navmenu {
+        font-size: 9pt;
+        padding: 4% 5%;
+    }
+    
+    #about, #research, #content {
+        padding: 4% 5%;
+    }
+    
+    .report-card, .cicada-card {
+        padding: 4%;
+    }
 }
