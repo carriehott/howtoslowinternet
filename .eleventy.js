@@ -3,7 +3,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/css/"); 
     eleventyConfig.addWatchTarget("src/css/");
   return {
-    pathPrefix: "/repository-name/",
     dir: {
       input: 'src',
       includes: '_includes',
