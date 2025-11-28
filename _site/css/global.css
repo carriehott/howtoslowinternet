@@ -1,275 +1,317 @@
-@import url('./reset.css');
+@import url("./reset.css");
 
 html {
   box-sizing: border-box;
-    font-size: 1rem;
-   transition: font-size 0.2s ease;
-            }
-
-
-@font-face {
-    font-family: 'IBM Plex Mono';
-    src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format('woff');
+  font-size: 1rem;
+  transition: font-size 0.2s ease;
 }
 
-body{
-    background-color: #fcfcfc;
-    background-image: url('/assets/images/slowbg_12.png');
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    color: #22019a; 
-    font-family: "IBM Plex Mono", monospace;
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/assets/fonts/IBMPlexMono-Regular.ttf") format("woff");
+}
+
+body {
+  background-color: #fcfcfc;
+  background-image: url("/assets/images/slowbg_12.png");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: #22019a;
+  font-family: "IBM Plex Mono", monospace;
+}
+main {
+  margin-bottom: 5%;
 }
 
 p {
-    font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 #navmenu {
-    background-color: #fcfcfcdd;
-    border-left: solid 1px #22019a;
-    padding-left: 3%; 
-    width: 30%; 
-    height: 100vh; 
-    position: fixed; 
-    z-index: 100;
-    top: 0; 
-    right: 0; 
-    font-size: 10pt;
-    overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfcdd;
+  border-left: solid 1px #22019a;
+  padding-left: 3%;
+  width: 30%;
+  height: 95vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
 }
 
 #footer_about {
-    border: solid 1px #22019a;
-    padding-left: 3%; 
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 90%; 
-    position: absolute;
-    bottom: 10%;
-    right: 5%; 
-    font-size: .75rem;
+  border: solid 1px #22019a;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-size: 0.75rem;
 }
 
 #rss {
-    border: solid 1px #22019a;
-    padding-left: 3%; 
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 90%; 
-    position: absolute;
-    bottom: 3%;
-    right: 5%; 
-    font-size: .75rem;
-
+  border: solid 1px #22019a;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 90%;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  font-size: 0.75rem;
 }
 
-#about, #research, #content{
-    padding: 1%;
-    width: 65%; 
-    margin-right: 25%; 
+#about,
+#research,
+#content {
+  padding: 1%;
+  width: 65%;
+  margin-right: 25%;
 }
 
 .report-grid {
-    margin-top: 1%; 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(min(40vw, 22rem), 1fr));
-    gap: 5%;
-    grid-auto-rows: auto;
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(40vw, 22rem), 1fr));
+  gap: 5%;
+  grid-auto-rows: auto;
 }
 
 .report-card {
-    background-color: #fcfcfcdd;
-    padding: 3%; 
-    margin: 1%; 
-    width: 100%; 
-    border: solid 1px #22019a;
+  background-color: #fcfcfcdd;
+  padding: 3%;
+  margin: 1%;
+  width: 100%;
+  border: solid 1px #22019a;
 }
 
-.author, .description {
-   font-size: .75rem;
+.author,
+.description {
+  font-size: 0.75rem;
 }
 
 .cicada-card {
-    background-color: #C7FAE7;
-    color: #1e83fe; 
-    padding: 3%; 
-    margin: 1%; 
-    width: 75%; 
-    border: solid 5px #C7FAE7;
+  background-color: #c7fae7;
+  color: #1e83fe;
+  padding: 3%;
+  margin: 1%;
+  width: 75%;
+  border: solid 5px #c7fae7;
 }
 
 .cicada {
-    color: #66B647; 
+  color: #66b647;
 }
 
 .status {
-    color: #f496ee; 
+  color: #f496ee;
 }
 
 #cicada-row {
-    display: flex; 
-    flex-direction: row;
-    justify-content:flex-start; 
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #cicada-row img {
-    width: 35%;
-    margin: 1%;  
-    max-width: 100%;
-    height: auto;
+  width: 35%;
+  margin: 1%;
+  max-width: 100%;
+  height: auto;
 }
 
 #mailinglist {
-    width: 65%; 
+  width: 65%;
 }
 
 iframe {
-    width: 100%; 
-    height: 100vh; 
+  width: 100%;
+  height: 100vh;
 }
 
 /* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-    /* Adjust font sizes for mobile */
-    html {
-        font-size: 0.9rem;
-    }
-    
-    p {
-        font-size: 1rem;
-    }
-    
-    h1 {
-        font-size: 1.25rem;
-    }
-    
-    /* Make navigation menu mobile-friendly */
-    #navmenu {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-left: none;
-        border-bottom: solid 1px #22019a;
-        padding: 3% 5%;
-        max-height: none;
-        overflow-y: visible;
-    }
-    
-    #navmenu h1 {
-         margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0.5rem;
-        font-size: 1rem;
-    }
-    
-    /* Adjust content width for mobile */
-    #about, #research, #content {
-        width: 95%;
-        margin-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 3% 5%;
-    }
-    
-    /* Fix footer positioning on mobile */
-    #footer_about, #rss {
-        position: relative;
-        width: 95%;
-        margin: 3% auto;
-        right: auto;
-        bottom: auto;
-        padding: 3% 5%;
-    }
-    
-    /* Make report grid single column on mobile */
-    .report-grid {
-        grid-template-columns: 1fr;
-        gap: 3%;
-    }
-    
-    .report-card {
-        width: 100%;
-        margin: 2% 0;
-        padding: 5%;
-    }
-    
-    /* Adjust cicada card width */
-    .cicada-card {
-        width: 100%;
-        margin: 2% 0;
-        padding: 5%;
-    }
-    
-    /* Make cicada row stack on mobile */
-    #cicada-row {
-        flex-direction: column;
-    }
-    
-    #cicada-row img {
-        width: 100%;
-        margin: 2% 0;
-    }
-    
-    /* Adjust mailing list width */
-    #mailinglist {
-        width: 100%;
-    }
-    
-    /* Fix iframe height on mobile */
-    iframe {
-        height: 80vh;
-        min-height: 400px;
-    }
+@media screen and (max-width: 850px) {
+  /* Adjust font sizes for mobile */
+  html {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  /* Make navigation menu mobile-friendly */
+  #navmenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    top: 5px;
+    border: solid 1px #22019a;
+    padding: 1%;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  #navmenu h1 {
+    margin-left: 0.25rem;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+  }
+
+  #navmenu #nav {
+    width: 45%;
+  }
+
+  #navmenu #nav_about {
+    width: 65%;
+  }
+
+  /* Adjust content width for mobile */
+  #about,
+  #research,
+  #content {
+    width: 95%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 5%;
+  }
+
+  /* Fix footer positioning on mobile */
+  #footer_about,
+  #rss {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    right: auto;
+    bottom: auto;
+    padding: 3% 5%;
+  }
+
+  #footer_about {
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+  }
+  /* Make report grid single column on mobile */
+  .report-grid {
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+
+  .report-card {
+    width: 100%;
+    margin: 2% 0;
+    padding: 5%;
+  }
+
+  /* Adjust cicada card width */
+  .cicada-card {
+    width: 100%;
+    margin: 2% 0;
+    padding: 5%;
+  }
+
+  /* Make cicada row stack on mobile */
+  #cicada-row {
+    flex-direction: column;
+  }
+
+  #cicada-row img {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+  /* Adjust mailing list width */
+  #mailinglist {
+    width: 100%;
+  }
+
+  /* Fix iframe height on mobile */
+  iframe {
+    height: 80vh;
+    min-height: 400px;
+  }
 }
 
 /* Tablet styles */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #navmenu {
-        width: 35%;
-    }
-    
-    #about, #research, #content {
-        width: 60%;
-        margin-right: 30%;
-    }
-    
-    .report-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(45vw, 20rem), 1fr));
-    }
+  #navmenu {
+    width: 40%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  #navmenu h1 {
+    margin-left: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #footer_about,
+  #rss {
+    position: relative;
+    width: 85%;
+    right: 5px;
+    bottom: auto;
+  }
+
+  #about,
+  #research,
+  #content {
+    width: 60%;
+    margin-right: 30%;
+  }
+
+  .report-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(45vw, 20rem), 1fr));
+  }
 }
 
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
-    html {
-        font-size: 0.85rem;
-    }
-    
-    p {
-        font-size: 0.95rem;
-    }
-    
-    h1 {
-        font-size: 1.1rem;
-    }
-    
-    #navmenu {
-        font-size: 9pt;
-        padding: 4% 5%;
-    }
-    
-    #about, #research, #content {
-        padding: 4% 5%;
-    }
-    
-    .report-card, .cicada-card {
-        padding: 4%;
-    }
+  html {
+    font-size: 0.85rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #navmenu {
+    font-size: 9pt;
+    padding: 4% 5%;
+  }
+
+  #about,
+  #research,
+  #content {
+    padding: 4% 5%;
+  }
+
+  .report-card,
+  .cicada-card {
+    padding: 4%;
+  }
 }
