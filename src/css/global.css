@@ -30,6 +30,7 @@ p {
 
 h1 {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 a {
@@ -40,7 +41,7 @@ a {
   flex-direction: column;
   background-color: #fcfcfcdd;
   border-left: solid 1px #22019a;
-  padding-left: 3%;
+  padding-left: 1%;
   width: 25%;
   height: 100vh;
   position: fixed;
@@ -125,6 +126,63 @@ a {
 
 .status {
   color: #f18706;
+}
+
+#guide_row {
+  width: 90%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+#guide_row img {
+  width: 15%;
+  margin: 1%;
+  max-width: 100%;
+  height: auto;
+  border: solid 1px #22019a;
+}
+
+#guide-grid {
+  width: 100%; 
+}
+
+.guide-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.guide-card {
+  background-color: #fcfcfcac;
+  padding: 0 3%;
+  margin: 1%;
+  width: 30%;
+  border: solid 1px #22019a;
+}
+
+#guide-grid h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+  width: 100%; 
+}
+
+#guide-grid p {
+    text-align: left;
+  font-size: 1rem;
+  margin-bottom: 3%;
+}
+
+.guide-card img {
+  width: 100%;
+  margin: 2% 0;
+  border: solid 1px #22019a;
+}
+
+.guide-card img:hover {
+  filter: hue-rotate(90deg);
+  opacity: .5;
 }
 
 #cicada-row {
