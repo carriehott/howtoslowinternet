@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>news from how to slow internet</title>
+  <link href="https://howtoslowinternet.com/feed.xml" rel="self"/>
+  <link href="https://howtoslowinternet.com/news.html"/>
+  <updated>2025-10-04T12:00:00Z</updated>
+  <id>https://howtoslowinternet.com/news.html</id>
+  <entry>
+    <title>solar server completed at Deurendis</title>
+    <link href="https://howtoslowinternet.com/news.html#item1"/>
+    <updated>2025-10-04T12:00:00Z</updated>
+    <id>https://howtoslowinternet.com/news.html#item1</id>
+    <content type="html"><![CDATA[Begun during the first Earth Camp in August 2025, the solar web server is now installed at Deurendis in New York.]]></content>
+  </entry>
+  <entry>
+    <title>Earth Camp 2025</title>
+    <link href="https://howtoslowinternet.com/news.html#item2"/>
+    <updated>2025-10-04T12:00:00Z</updated>
+    <id>https://howtoslowinternet.com/news.html#item2</id>
+    <content type="html"><![CDATA[For three days, folks gathered in person at Deurendis in New York to share research and build a solar web server. There&#39;s more to do, but the solar server is almost complete and will be installed at Deurendis and will be available for public use soon.]]></content>
+  </entry>
+</feed>

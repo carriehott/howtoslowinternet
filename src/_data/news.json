@@ -1,0 +1,22 @@
+[
+
+  {
+    "title": "solar server completed at Deurendis",
+    "date": "2025-10-04",
+    "content": "Begun during the first Earth Camp in August 2025, the solar web server is now installed at Deurendis in New York.",
+    "image": "/assets/images/nyserver_2025.png",
+    "link": "/guides",
+    "linkText": "what resources did we need to build the solar server?"
+  
+  },
+ 
+  {
+    "title": "Earth Camp 2025",
+    "date": "2025-10-04",
+    "content": "For three days, folks gathered in person at Deurendis in New York to share research and build a solar web server. There's more to do, but the solar server is almost complete and will be installed at Deurendis and will be available for public use soon.",
+    "image": "/assets/images/earthcamp_2025.png",
+    "link": "/about",
+    "linkText": "what is earth camp?"
+  
+  }
+]

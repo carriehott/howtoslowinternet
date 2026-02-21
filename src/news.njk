@@ -1,0 +1,29 @@
+---
+layout: layouts/base.html
+title: 🐌 slow news 📞 open calls 🌀 experiments | how to slow internet
+description: news and updates from how to slow internet
+---
+<main id="news">
+    <div id="news_content">
+         <h1 id="news_title">🐌 slow news 📞 open calls 🌀 experiments</h1>
+  <a href="/feed.xml" class="rss-subscribe" type="application/atom+xml">
+    📡 subscribe to updates via RSS 📡 
+  </a>
+  <a href="mailto:hellowslowinternet@proton.me" class="email"> 📞 contact us here 📞 </a>
+  </div>
+<div>
+</div>
+    {% for item in news %}
+  <article class="feed_item" id="item{{ loop.index }}">
+    <h2>{{ item.title }}</h2>
+    <time>{{ item.date }}</time>
+    {% if item.image %}
+      <img src="{{ item.image }}" alt="{{ item.title }}">
+    {% endif %}
+    <p>{{ item.content }}</p>
+    {% if item.link %}
+      <a href="{{ item.link }}" target="_blank">{{ item.linkText }}</a>
+    {% endif %}
+  </article>
+  {% endfor %}
+  </main>
