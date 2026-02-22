@@ -129,6 +129,38 @@ summary:hover {
   cursor: pointer;
 }
 
+.term {
+  color: rgb(187, 3, 95);
+  font-weight: bold;
+}
+
+.term_row {
+display: flex;
+flex-direction: row;
+justify-content: flex-start; 
+flex-wrap: nowrap;
+margin-top: 1%;
+ border: solid .5px #22019a;
+ padding: 1%;
+}
+
+.term_img {
+  height: auto;
+  margin-right: 1%;
+   
+}
+
+.term_img:hover {
+  filter: hue-rotate(90deg);
+  opacity: .5;
+  background-color: hotpink;
+  cursor: pointer;
+} 
+
+.term_def {
+  width: 75%;
+}
+
 .guidelink {
   text-decoration: none;
 }
