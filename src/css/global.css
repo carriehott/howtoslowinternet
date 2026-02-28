@@ -485,7 +485,7 @@ summary:hover {
 
   /* Fix footer positioning on mobile */
   #footer_about,
-  #rss {
+  #rss, #email {
     position: relative;
     width: 85%;
     margin: auto;
