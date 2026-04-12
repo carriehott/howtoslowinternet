@@ -612,7 +612,7 @@ summary:hover {
 
   .report-card,
   .cicada-card {
-    padding: 4%;
+    padding: 5%;
   }
 
   #news {
@@ -639,4 +639,5 @@ summary:hover {
 .guide-card {
   width: 100%;
   margin: 1% 0;
+}
 }
