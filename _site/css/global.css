@@ -39,7 +39,7 @@ a {
 #navmenu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #fcfcfcdd;
   border-left: solid 1px #22019a;
   padding-left: 1%;
@@ -54,17 +54,22 @@ a {
 
 #nav {
   margin-top: 0;
-  max-height: 65vh;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
 }
 
 #nav h1 {
   margin-left: 0.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 #nav_about {
   width: 100%;
-  max-height: 40vh;
+  flex-shrink: 0;
   margin: 1px;
 }
 
@@ -236,18 +241,30 @@ summary:hover {
   font-size: 0.75rem;
 }
 
-.cicada-card {
+#cicada-card {
   background-color: #c7fae7;
   color: #1e83fe;
   padding: 3%;
   margin: 1%;
   width: 75%;
-  border: solid 5px #c7fae7;
 }
 
-.cicada {
+#cicada {
   color: #66b647;
 }
+
+#data-card {
+  background-color: #f6f2c6;
+  color: #04418d;
+  padding: 3%;
+  margin: 1%;
+  width: 75%;
+}
+
+#data {
+  color: #66b647;
+}
+
 
 .status {
   color: #f18706;
@@ -409,17 +426,17 @@ summary:hover {
 }
 
 .index {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid; 
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: auto;
+ gap: 5%;
 }
 
 .index_card {
   background-color: #fcfcfcdd;
-  padding: 3%;
-  margin: 1%;
-  max-width: max-content;
+  padding: 2%;
+  margin: 5%;
+  max-width: 100%; 
   border: solid 1px #22019a;
 }
 
@@ -427,6 +444,7 @@ summary:hover {
   font-size: 1rem;
   text-align: center;
   align-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -472,12 +490,19 @@ summary:hover {
 
   #navmenu #nav {
     width: 45%;
+    flex: none;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 100%;
   }
 
   #navmenu #nav_about {
-    width: 65%;
+    width: 50%;
   }
 
+  #nav_about {
+    margin-top: 5px;
+  }
   /* Adjust content width for mobile */
   #about,
   #research,
@@ -551,7 +576,7 @@ summary:hover {
   #navmenu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 40%;
     position: fixed;
     right: 0px;
@@ -570,6 +595,10 @@ summary:hover {
     margin-left: 0.25rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+  }
+
+  #nav_about {
+    margin-top: 5px;
   }
 
   #about,
@@ -599,16 +628,16 @@ summary:hover {
   }
   
   #nav {
-    height: 85vh; 
-}
+    height: auto;
+  }
   #navmenu {
     font-size: 9pt;
     padding: 4% 5%;
-     height: 70vh; 
   }
 
-  #nav_about p {
-    font-size: 1rem;
+  #footer_about {
+   max-width: 45%; 
+    margin: 3px; 
   }
 
   #about,
