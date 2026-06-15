@@ -207,6 +207,13 @@ summary:hover {
 .guidenav a:hover {
   color: hotpink;
 }
+.means_grid {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 5%;
+  grid-auto-rows: auto;
+}
 
 .report-grid {
   margin-top: 1%;
