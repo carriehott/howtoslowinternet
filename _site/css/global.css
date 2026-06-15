@@ -207,6 +207,13 @@ summary:hover {
 .guidenav a:hover {
   color: hotpink;
 }
+.means_grid {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 5%;
+  grid-auto-rows: auto;
+}
 
 .report-grid {
   margin-top: 1%;
@@ -612,7 +619,7 @@ summary:hover {
 
   .report-card,
   .cicada-card {
-    padding: 4%;
+    padding: 5%;
   }
 
   #news {
@@ -639,4 +646,5 @@ summary:hover {
 .guide-card {
   width: 100%;
   margin: 1% 0;
+}
 }
